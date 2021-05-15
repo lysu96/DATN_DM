@@ -16,23 +16,28 @@ include 'view/masster/head.php';
                 <div class="col-2">
                     <div class="form-container">
                         <div class="form-btn">
-                            <span onclick="login()">Login</span>
-                            <span onclick="register()">Register</span>
+                            <span onclick="login()">Đăng nhập</span>
+                            <span onclick="register()">Đăng ký</span>
                             <hr id="Indicator">
+                            <span style="color: red"><?php if (isset($err)) {
+                                echo $err;
+                            }; ?></span><span style="color: green"><?php if (isset($tc)) {
+                                echo $tc;
+                            } ?></span>
                         </div>
 
-                        <form id="LoginForm">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Login</button>
-                            <a href="">Forgot password</a>
+                        <form id="LoginForm" method="POST">
+                            <input type="email" name="Email" placeholder="Email" required>
+                            <input type="password" name="Password" placeholder="Password" >
+                            <button type="submit" class="btn" name="Login">Login</button>
+                            <a href="admin/index.php">Forgot password</a>
                         </form>
 
-                        <form id="RegForm">
-                            <input type="text" placeholder="Username">
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Register</button>
+                        <form id="RegForm" method="POST">
+                            <input type="text" name="Username" placeholder="Username" required>
+                            <input type="email" name="Email" placeholder="Email" required>
+                            <input type="password" name="Password" placeholder="Password" required>
+                            <button type="submit" class="btn" name="Register">Register</button>
                         </form>
 
                     </div>

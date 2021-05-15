@@ -8,7 +8,7 @@ if (isset($_GET['action'])) {
 	    	}
 	    	switch ($action) {
 	    		case 'add':
-	    			require_once '../view/admin/add-products.php'; 
+	    			require_once 'view/admin/add-products.php'; 
 	    		break;
 	    		case 'edit':
 	    			if (isset($_GET['id'])) {
@@ -23,10 +23,10 @@ if (isset($_GET['action'])) {
 	    			echo "Xóa: ".$id;
 	    		break;
 	    		case 'list':
-	    			require_once '../view/admin/list-producs.php';
+	    			require_once 'view/admin/list-producs.php';
 	    			break;
 	    		default:
-	    			require_once '../view/admin/list-producs.php';
+	    			require_once 'view/admin/list-producs.php';
 	    			break;
 	    	}
 

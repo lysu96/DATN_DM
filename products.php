@@ -30,7 +30,7 @@ include 'view/masster/head.php';
         <div class="row">
             <?php 
                 //$sp = $db->List();
-                $item_page = !empty($_GET['item_page']) ? $_GET['item_page'] : 4;
+                $item_page = !empty($_GET['item_page']) ? $_GET['item_page'] : 2;
                 $curres_page = !empty($_GET['curres_page']) ? $_GET['curres_page'] : 1;
                 $offset = ($curres_page - 1) * $item_page;
                 $sp = $db->List_PT($item_page, $offset);

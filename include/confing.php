@@ -47,5 +47,12 @@ class Database
 		return $arr;
 	}
 
+	public function Num_rows($sql)
+	{
+		$reautl = $this->Execute($sql);
+		$rows= mysqli_num_rows($reautl);
+		return $rows;
+	}
+
 }
  ?>

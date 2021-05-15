@@ -5,13 +5,13 @@
                 <nav>
                     <ul id="MenuItems">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="products.php">Sản phẩm</a></li>
-                        <li><a href="">Chúng tôi</a></li>
-                        <li><a href="">Liên hệ</a></li>
-                        <li><a href="account.php">Tài khoản</a></li>
+                        <li><a href="index.php?Controller=Products">Sản phẩm</a></li>
+                        <li><a href="index.php?Controller=Tintuc">Tin tức</a></li>
+                        <li><a href="index.php?Controller=Lienhe">Liên hệ</a></li>
+                        <li><a href="index.php?Controller=Taikhoan&action=Login">Tài khoản</a></li>
                     </ul>
                 </nav>
-                <a href="cart.php"><img src="images/cart.png" width="30px" height="30px"></a>
+                <a href="index.php?Controller=Cart"><img src="images/cart.png" width="30px" height="30px"></a>
                 <img src="images/menu.png" class="menu-icon" 
                 onclick="menutoggle()">
             </div>

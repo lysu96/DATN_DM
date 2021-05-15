@@ -1,6 +1,6 @@
 <?php 
 //require_once '../include/confing.php';
-require_once '../Model/sanpham.php'; 
+require_once 'Model/sanpham.php'; 
 //require_once 'Model/test.php';
 
 $db = new Sanpham();
@@ -20,13 +20,13 @@ $db->Connect();
   <title>Admin</title>
 
   <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- Page level plugin CSS-->
-  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="admin/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="css/sb-admin.css" rel="stylesheet">
+  <link href="admin/css/sb-admin.min.css" rel="stylesheet">
 
 </head>
 
@@ -97,7 +97,7 @@ $db->Connect();
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <h6 class="dropdown-header">Xử lý hóa đơn:</h6>
-          <a class="dropdown-item" href="index.php?hd=donhang">Đơn hàng</a>
+          <a class="dropdown-item" href="index.php?Controller=Taikhoan&action=A">Đơn hàng</a>
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">Quản lý kho:</h6>
           <a class="dropdown-item" href="index.php?hd=sanpham">Sản phẩm</a>
